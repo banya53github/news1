@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 50%; /* 每行顯示兩個項目 */
+    /* 這裡可以加入更多樣式，如背景顏色或邊框等 */
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: 100%; /* 當螢幕寬度小於768px時，讓項目佔滿一整行 */
+    }
+}
+
